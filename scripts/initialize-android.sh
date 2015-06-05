@@ -10,14 +10,14 @@ if [ ! -e ${INITIALIZATION_FILE} ]; then
   # fetch and initialize $ANDROID_HOME
   download-android
   # Use the latest android sdk tools
-  echo y | android update sdk --no-ui --filter platform-tools > /dev/null
-  echo y | android update sdk --no-ui --filter tools > /dev/null
+  echo y | android update sdk --no-ui --filter platform-tool > /dev/null
+  echo y | android update sdk --no-ui --filter tool > /dev/null
 
   # The BuildTools version used by your project
-  echo y | android update sdk --no-ui --filter build-tools-20.0.0 --all > /dev/null
+  echo y | android update sdk --no-ui --filter build-tools-22.0.1 --all > /dev/null
 
   # The SDK version used to compile your project
-  echo y | android update sdk --no-ui --filter android-18 > /dev/null
+  echo y | android update sdk --no-ui --filter android-22 > /dev/null
 
   # uncomment to install the Extra/Android Support Library
   # echo y | android update sdk --no-ui --filter extra-android-support --all > /dev/null
